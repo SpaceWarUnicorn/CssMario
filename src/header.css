@@ -1,0 +1,60 @@
+header {
+  margin: 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #36404a;
+}
+
+header>div {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header>ul {
+  list-style: none;
+  margin: 2rem;
+  display: flex;
+  flex-grow: 3;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header>ul i {
+  margin: 16px;
+}
+
+header a:link, header a:visited, header a:active {
+  color: white;
+}
+
+header a:hover {
+  color: rgba(255, 115, 155, 0.5);
+}
+
+.search {
+  margin: 20px;
+  border-radius: 25px;
+  width: 150px;
+  height: 23px;
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+  flex-grow: 1;
+  color: rgb(165, 166, 167);
+}
+
+.logo {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  flex-grow: 2;
+}
+
+.logo>img {
+  width: 90px;
+  height: 22.5px;
+}

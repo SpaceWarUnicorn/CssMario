@@ -1,0 +1,31 @@
+/*-------------------/*
+
+-> Body // content // nav  <-
+
+/*--------------------*/
+
+aside ul {
+  list-style: none;
+}
+
+aside>ul {
+  padding: 0;
+}
+
+aside li {
+  padding: 10px 0 10px 6px;
+}
+
+aside i {
+  margin-right: 15px;
+}
+
+aside a:link, aside, a:active, aside a:visited {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+}
+
+aside a:hover {
+  color: rgb(75, 180, 157);
+}

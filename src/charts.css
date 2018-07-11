@@ -6,7 +6,6 @@
 
 .container.charts {
   display: flex;
-  flex: 1 0 auto;
 }
 
 .chart {
@@ -22,7 +21,9 @@
 }
 
 .chart.bars {
-  flex: 1 0 auto;
+  flex: 1 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .chart.cake {
@@ -77,8 +78,13 @@
 
 /*--------------------*/
 
-.barchart{
-  height: 300px;
-  width: 600px;
-  align-self: center;
+.barchart{;
+  width: 100%;
+  display: flex;
+  flex: 1 auto;
+  justify-content: center;
+}
+
+.barchart > img {
+  width: 90%;
 }

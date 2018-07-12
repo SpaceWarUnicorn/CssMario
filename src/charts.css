@@ -6,6 +6,8 @@
 
 .container.charts {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .chart {

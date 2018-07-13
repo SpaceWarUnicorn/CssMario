@@ -26,8 +26,11 @@
       <li><a href="#"><i class="far fa-bell"></i></a></li>
       <li><a href="#"><i class="fas fa-expand-arrows-alt"></i></a></li>
       <li><a href="#"><i class="fas fa-cog"></i></a></li>
-      <li><a href="#"><img class="circle" src="https://picsum.photos/20/20" alt="profile"></a></li>
     </ul>
+    <div>
+      <div class = "arrow"></div>
+      <a href="#"><img class="circle" src="https://picsum.photos/20/20" alt="profile"></a>
+    </div>
   </header>
 
   <section class="main">
@@ -137,9 +140,7 @@
           <p>TOTAL REVENUE</p>
 
           <article class="items-cake">
-
               <img class="item-cake" src="src/media/circlechart.png" alt="cakechart">
-
             <div class="cake-texto">
               Total
             </div>
@@ -186,13 +187,46 @@
         </section>
 
       </section>
-
-
     </section>
-
-
   </section>
+<!--
+  -> Webcomponents
+  -> https://html.spec.whatwg.org/multipage/custom-elements.html
+-->
+  <script>
+    class cardPanel extends HTMLElements{
+      constructor(){
+        super();
+      }
 
+      static get observedAttributes(){
+        return ['icon'];
+      }
+
+      attributeChangedCallback(name, oldValue, newValue){
+        //name will always be icon due to observedAttributes
+        this._icon = newValue;
+        this._updateRendering();
+      }
+
+      connectedCallback(){
+        this._updateRendering();
+      }
+
+      get country(){
+        return this._icon;
+      }
+
+      set icon(v){
+        setAttribute("icon", v);
+      }
+
+      _updateRendering(){
+
+      }
+
+      customElements.define("card-panel", cardPanel);
+    }
+  </script>
 </body>
-
 </html>

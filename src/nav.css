@@ -12,7 +12,11 @@ aside>ul {
   padding: 0;
 }
 
-aside li {
+aside a {
+  padding: 7px 6px 7px 6px;
+}
+
+aside li{
   padding: 10px 0 10px 6px;
 }
 
@@ -26,6 +30,7 @@ aside a:link, aside, a:active, aside a:visited {
   font-weight: 300;
 }
 
-aside a:hover {
+aside a:hover{
   color: rgb(75, 180, 157);
+  background: rgba(0,0,0,0.2);
 }

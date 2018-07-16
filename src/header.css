@@ -16,7 +16,11 @@ header>div {
   justify-content: space-around;
 }
 
-header>ul {
+.icons {
+  flex-grow: 3;
+  }
+
+.icons>ul {
   list-style: none;
   margin: 0;
   display: flex;
@@ -41,7 +45,7 @@ header a:hover {
 .search {
   border-radius: 25px;
   width: 20%;
-  padding: 5px 5px 5px 20px;
+  padding: 5px 5px 5px 15px;
   background: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.2);
   font-weight: bold;
